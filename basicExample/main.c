@@ -7,9 +7,17 @@ int main(void) {
     scanf(" %d", &i);
     while ( i != 0)
     {
-        printf("Faltam %i segundos para terminar teste\n", i);
-        sleep(1);
-        i--;
+        if (i == 1) {
+            printf("Faltam %i segundo para terminar teste\n", i);
+            sleep(1);
+            i--;
+        }
+        else {
+            printf("Faltam %i segundos para terminar teste\n", i);
+            sleep(1);
+            i--;
+        }
+
     }
     return 0;
 
